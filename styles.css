@@ -39,7 +39,7 @@ body {
 section {
     align-items: center;
     justify-content: center;
-    padding: 40px 1%;
+    padding: 40px 2%;
     gap: 10px;
     color: #1e201f;
 }
@@ -175,17 +175,15 @@ main#main-doc section.main-section li {
 }
 
 main#main-doc section.main-section li p {
-    text-align: center;
-    margin: 0 15px;
+    text-align: justify;
 }
-
 
 
 header {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 25px;
-    margin: 15px;
+    margin: 15px 0;
     color: #000;
 }
 
