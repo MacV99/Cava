@@ -30,7 +30,7 @@ a {
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-attachment: fixed;
     color: black;
     font-size: 15px;
@@ -39,7 +39,7 @@ body {
 section {
     align-items: center;
     justify-content: center;
-    padding: 40px 10%;
+    padding: 40px 1%;
     gap: 10px;
     color: #1e201f;
 }
@@ -57,7 +57,7 @@ nav#navbar {
     background: #fff;
     border-bottom: solid #033316;
     z-index: 10;
-    padding: 0 7%;
+    padding: 0 1%;
 }
 
 nav#navbar img.logo {
@@ -162,7 +162,6 @@ main#main-doc section.main-section {
     justify-content: center;
     width: 100%;
     color: #000;
-    padding: 40px 7%;
     background-color: #fff;
     backdrop-filter: blur(10px);
     gap: 10px;
@@ -217,8 +216,7 @@ section#products ul {
     display: flex;
     width: 95%;
     overflow-x: auto;
-    padding-bottom: 15px;
-    padding: 7px;
+    padding-bottom: 20px;
     /* mask: linear-gradient(to left, transparent 0%, white 2%, white 98%, transparent 100%); */
 }
 
@@ -236,15 +234,12 @@ section#products ul li {
 
 section#products ul img {
     width: 250px;
-    height: 250px;
     background-color: white;
-    padding: 10px;
-    object-fit: contain;
-    border: solid 1px;
+    object-fit: fill;
+    border: solid 1px #033316;
 }
 
 section#products ul li:hover {
-    transform: scale(1.03);
     color: #033316;
 }
 
@@ -272,7 +267,7 @@ section#products ul::-webkit-scrollbar-thumb:hover {
     background: #033316;
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     div.menu {
         width: auto;
         height: 100%;
@@ -324,4 +319,4 @@ section#products ul::-webkit-scrollbar-thumb:hover {
         border-bottom: solid #00f2fe;
         z-index: 10;
     }
-}
+} */
