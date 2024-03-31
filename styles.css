@@ -40,8 +40,7 @@ body {
     font-family: 'Lemon/Milk', sans-serif;
     /* Usando Lemon/Milk como fuente */
     background-attachment: fixed;
-    color: black;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 section {
@@ -182,7 +181,7 @@ main#main-doc section.main-section li {
     justify-content: center;
 }
 
-main#main-doc section.main-section li p {
+p {
     text-align: justify;
 }
 
@@ -194,6 +193,7 @@ header {
     margin: 15px 0;
     color: #000;
 }
+
 
 /* PRODUCTS */
 section#products {
@@ -222,7 +222,7 @@ section#products ul {
     display: flex;
     width: 95%;
     overflow-x: auto;
-    padding-bottom: 20px;
+    padding: 10px 11px 20px 11px;
     /* mask: linear-gradient(to left, transparent 0%, white 2%, white 98%, transparent 100%); */
 }
 
@@ -240,9 +240,9 @@ section#products ul li {
 
 section#products ul img {
     width: 250px;
-    background-color: white;
+    border-radius: 7px;
     object-fit: fill;
-    border: solid 1px #033316;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
 }
 
 section#products ul li:hover {
@@ -272,6 +272,24 @@ section#products ul::-webkit-scrollbar-thumb {
 section#products ul::-webkit-scrollbar-thumb:hover {
     background: #033316;
 }
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe4c4;
+    padding: 40px 3%;
+    gap: 20px;
+}
+
+footer img {
+    width: 60%;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
+}
+
 
 /* @media (min-width: 800px) {
     div.menu {
