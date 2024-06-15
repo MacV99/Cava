@@ -30,18 +30,34 @@ html::-webkit-scrollbar-thumb:hover {
     padding: 0;
 }
 
-li,
-a {
-    list-style: none;
-    text-decoration: none;
-}
-
 body {
     font-family: 'Lemon/Milk', sans-serif;
     /* Usando Lemon/Milk como fuente */
     background-attachment: fixed;
     font-size: 13px;
 }
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.boton {
+    font-size: 15.21px;
+    color: #fff;
+    background-color: #033316f5;
+    padding: 20px 30px;
+    border-radius: 7px;
+    border: unset;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.boton:hover {
+    background-color: #033316;
+}
+
 
 section {
     align-items: center;
@@ -192,6 +208,7 @@ header {
     font-size: 25px;
     margin: 15px 0;
     color: #000;
+    text-align: center;
 }
 
 
