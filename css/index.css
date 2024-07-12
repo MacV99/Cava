@@ -261,7 +261,7 @@ section#products ul img {
     width: 250px;
     border-radius: 7px;
     object-fit: fill;
-    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5); */
 }
 
 section#products ul li:hover {
