@@ -235,11 +235,12 @@ section#products div {
 }
 
 section#products ul {
-    gap: 20px;
+    gap: 25px;
     display: flex;
-    width: 95%;
-    overflow-x: auto;
+    width: 68%;
+    overflow-x: scroll;
     padding: 10px 11px 20px 11px;
+    scroll-snap-type: x mandatory;
     /* mask: linear-gradient(to left, transparent 0%, white 2%, white 98%, transparent 100%); */
 }
 
@@ -252,6 +253,7 @@ section#products ul li {
     transition: 0.3s;
     gap: 5px;
     text-align: center;
+    scroll-snap-align: center;
 
 }
 
