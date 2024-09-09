@@ -126,16 +126,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Botón para hacer el pedido
     botonHacerPedido.addEventListener('click', () => {
         const nombreCliente = document.getElementById('name').value.trim();
-        const telefonoCliente = document.getElementById('phone').value.trim();
         const metodoPagoCliente = document.getElementById('metodo-pago').value.trim();
         const direccionCliente = document.getElementById('direccion').value.trim();
 
-        if (!nombreCliente || !telefonoCliente || !metodoPagoCliente || !direccionCliente) {
+        if (!nombreCliente || !metodoPagoCliente || !direccionCliente) {
             alert("Por favor, completa todos los campos del pedido.");
             return;
         }
 
-        let mensaje = `Pedido de: *${nombreCliente}* - ${telefonoCliente}\nMétodo de pago: *${metodoPagoCliente}*\nDirección y barrio: *${direccionCliente}*\n\n`;
+        let mensaje = `Pedido de: *${nombreCliente}* \nMétodo de pago: *${metodoPagoCliente}*\nDirección y barrio: *${direccionCliente}*\n\n`;
         carrito.forEach(item => {
             mensaje += `- ${item.nombre} - $${item.precio.toFixed(3)} x ${item.cantidad}\n`;
         });
@@ -145,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const urlWhatsApp = `https://wa.me/3172366425?text=${encodeURIComponent(mensaje)}`;
         window.open(urlWhatsApp, '_blank');
+        console.log('TEST');
     });
 
     // Botón para cancelar el pedido
