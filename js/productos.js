@@ -111,5 +111,21 @@ const productos = [
         img: "img/Products/yogurt/pina.jpg",
         categoria: "snaks"
     },
+    {
+        id: 14,
+        nombre: "MERIENDA DIVERTIDA",
+        precio: 14.000,
+        descripcion: "1 Yogurt frutal en presentación de 400ml + 1 galleta de avena con chips de chocolate",
+        img: "img/Products/combos/combo-merienda-divertida.jpg",
+        categoria: "combo"
+    },
+    {
+        id: 14,
+        nombre: "DISFRUTA MAS Y AHORRA MAS",
+        precio: 85.000,
+        descripcion: "4 litros de yogurt griego, consumibles durante mes y medio, solicitalos en las fechas y días que prefieras",
+        img: "img/Products/combos/combo-disfruta.jpg",
+        categoria: "combo"
+    },
 ];
 
