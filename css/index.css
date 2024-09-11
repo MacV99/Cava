@@ -101,13 +101,14 @@ ul.nav-content {
   top: 70px;
   left: 0px;
   width: 100%;
-  height: 90%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   background-color: #3030306d;
   backdrop-filter: blur(7px);
   font-size: 20px;
+  padding-bottom: 70px;
 }
 
 input#check-menu {
@@ -269,7 +270,8 @@ section#products ul::-webkit-scrollbar-thumb:hover {
     max-width: 500px;
   }
 
-  section#products ul, section#products #slider-combos {
+  section#products ul,
+  section#products #slider-combos {
     width: 84%;
   }
 }
