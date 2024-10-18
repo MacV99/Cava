@@ -1,0 +1,228 @@
+@import url('global.css');
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  color: black;
+  padding: 0px 4.25px;
+  text-align: center;
+  border-bottom: solid var(--green-color);
+  height: 70px;
+  box-shadow: 0px 0px 14px #0000009c;
+  justify-content: space-between;
+}
+
+header .bi-arrow-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  height: 100%;
+  width: auto;
+  margin-right: 15px;
+  color: var(--green-color);
+  transition: .2s ease-in-out;
+}
+
+.bi-arrow-left:hover {
+  color: var(--green-color-hover);
+  transform: translateX(-3.5px)
+}
+
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 14px;
+  align-items: flex-start;
+}
+
+main section {
+  width: 48%;
+  gap: 7px;
+  text-align: center;
+}
+
+label input,
+label select {
+  margin-top: 7px;
+}
+
+main section>h2,
+#select-product {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: dashed 2px;
+  border-radius: 7px;
+  width: 100%;
+  height: 65px;
+  color: black;
+  background-color: var(--cream-color);
+}
+
+#select-product {
+  margin: 0;
+  text-align: center;
+}
+
+#productos label {
+  width: 100%;
+}
+
+.producto {
+  border: 1px dashed black;
+  width: 100%;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 3.5px;
+  scroll-snap-align: center;
+  backdrop-filter: blur(7px);
+  background-color: #ffffff70;
+}
+
+button,
+details {
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 11px;
+  transition: .2s ease-in-out;
+}
+
+details {
+  padding: 0px;
+}
+
+button:hover,
+details:hover {
+  background-color: var(--green-color-hover);
+}
+
+#carrito li {
+  border: 1px dashed black;
+  border-radius: 3.5px;
+  padding: 7px 7px;
+  width: 100%;
+  gap: 7px;
+  backdrop-filter: blur(7px);
+  background-color: #ffffff70;
+}
+
+#carrito li div {
+  display: flex;
+  gap: 7px;
+}
+
+#carrito li button {
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.restar-producto,
+#cancelar-pedido {
+  background-color: #630000;
+}
+
+.restar-producto:hover,
+#cancelar-pedido:hover {
+  background-color: #320000;
+}
+
+#lista-carrito {
+  width: 100%;
+  max-height: 50vh;
+}
+
+#limpiar-carrito {
+  background-color: #630000;
+}
+
+#limpiar-carrito:hover {
+  background-color: #320000;
+}
+
+#carrito>button {
+  width: 130px;
+}
+
+#productos>div::-webkit-scrollbar,
+#lista-carrito::-webkit-scrollbar {
+  width: 0px;
+}
+
+#productos>div,
+#lista-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  /* background-color: var(--cream-color); */
+  background-image: url(../img/fontcow2.jpg);
+  padding: 7px;
+  /* border: solid var(--cream-color) 2px; */
+  border-radius: 7px;
+  width: 100%;
+  /* mask: linear-gradient(to top, transparent 0%, white 5%, white 95%, transparent 100%); */
+}
+
+#productos>div {
+  max-height: 70vh;
+}
+
+summary {
+  list-style: none;
+  padding: 7px;
+}
+
+details form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000ba;
+  backdrop-filter: blur(7px);
+  gap: 14px;
+  color: white;
+  font-size: 14px;
+}
+
+form div {
+  gap: 7px;
+}
+
+details .boton {
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 11px;
+}
+
+ul#lista-carrito li p {
+  text-align: center;
+}
+
+#total {
+  font-weight: bolder;
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 21px 14%;
+  }
+
+  #carrito ul,
+  #productos>div {
+    width: 70%;
+  }
+
+}

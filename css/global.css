@@ -1,0 +1,201 @@
+:root {
+  --green-color: #033316;
+  --green-color-hover: #001a0a;
+  --cream-color: #ffe4c4;
+}
+
+@font-face {
+  font-family: 'Lemon/Milk';
+  /* Nombre que le asignaremos a la fuente */
+  src: url('../Documents/Font/LEMONMILK-Light.otf') format('truetype');
+  /* Ruta relativa al archivo de la fuente */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lemon/Milk', sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #b6b6b6;
+  border-radius: 15px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #979797;
+}
+
+body {
+  background-attachment: fixed;
+  font-size: 13px;
+}
+
+.logo {
+  height: 100%;
+}
+
+/* FLEX-COLUMN */
+.flex-column,
+section,
+.producto,
+#carrito li,
+#productos,
+#carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* FLEX-ROW */
+.flex-row,
+#carrito li button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+input,
+select {
+  border-radius: 7px;
+  padding: 7px;
+  text-align: center;
+  border: none;
+  background-color: #ffffff70;
+  transition: 0.2s ease-in-out;
+  outline: none;
+  font-weight: bolder;
+  width: 200px;
+}
+
+input:focus {
+  background-color: #ffffffbb;
+  border: none;
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 21px;
+  margin-top: 21px;
+  gap: 14px;
+  border-top: solid 1px var(--cream-color);
+  background-image: url(../img/fontcow2.jpg);
+  font-size: 12px;
+}
+
+footer img {
+  width: 140px;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
+}
+
+footer #social-networks {
+  gap: 14px;
+  padding: 7px;
+  background-color: var(--cream-color);
+  border-radius: 7px;
+}
+
+footer #social-networks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: var(--green-color);
+  transition: .2s ease-in-out;
+}
+
+footer #social-networks a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer #social-networks a:hover {
+  background-color: var(--green-color);
+  color: white;
+}
+
+#banner {
+  padding: 0;
+  background-color: var(--cream-color);
+  width: 100%;
+}
+
+#banner .imgbanner {
+  width: 100%;
+}
+
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(100% 5%);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (min-width: 800px) {
+  footer {
+    padding: 21px 21%;
+  }
+
+  footer p {
+    max-width: 500px;
+  }
+
+  @keyframes autoShowAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(200px) scale(0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+
+}
