@@ -139,7 +139,7 @@ footer #social-networks a {
   transition: .2s ease-in-out;
 }
 
-footer #social-networks a i {
+i .bi, i{
   display: flex;
   align-items: center;
   justify-content: center;
