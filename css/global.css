@@ -107,8 +107,11 @@ footer {
   padding: 40px 21px;
   margin-top: 21px;
   gap: 14px;
-  border-top: solid 1px var(--cream-color);
-  background-image: url(../img/fontcow2.jpg);
+  background-image: url(../img/light-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   font-size: 12px;
 }
 
@@ -120,7 +123,6 @@ footer img {
 footer #social-networks {
   gap: 14px;
   padding: 7px;
-  background-color: var(--cream-color);
   border-radius: 7px;
 }
 

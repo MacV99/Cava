@@ -1,5 +1,13 @@
 @import url('global.css');
 
+body{
+  background-image: url(../img/light-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 header {
   display: flex;
   position: sticky;

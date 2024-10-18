@@ -157,12 +157,14 @@ section#products {
   width: 100%;
   gap: 7px;
   padding-bottom: 15px;
-  background-image: url(../img/fontcow2.jpg);
-  border-top: solid 2px var(--cream-color);
-  border-bottom: solid 2px var(--cream-color);
+  background-image: url(../img/light-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
-#products h2{
+#products h2 {
   margin-top: 14px;
 }
 
