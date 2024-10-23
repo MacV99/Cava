@@ -7,6 +7,7 @@
   padding: 20px 30px;
   border-radius: 7px;
   cursor: pointer;
+  transition: .2s ease-in-out;
 }
 
 .boton:hover {
@@ -156,7 +157,6 @@ section#products {
   color: #000;
   width: 100%;
   gap: 7px;
-  padding-bottom: 15px;
   background-image: url(../img/light-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,6 +190,7 @@ section#products ul {
   overflow-x: scroll;
   padding: 1px 15px 7px 15px;
   scroll-snap-type: x mandatory;
+  border-radius: 7px;
 }
 
 section#products ul li {

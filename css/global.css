@@ -1,6 +1,6 @@
 :root {
   --green-color: #033316;
-  --green-color-hover: #001a0a;
+  --green-color-hover: #001308;
   --cream-color: #ffe4c4;
 }
 
@@ -86,7 +86,7 @@ select {
   text-align: center;
   border: none;
   background-color: #ffffff70;
-  transition: 0.2s ease-in-out;
+  transition: .2s ease-in-out;
   outline: none;
   font-weight: bolder;
   width: 200px;
@@ -105,14 +105,14 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 40px 21px;
-  margin-top: 21px;
   gap: 14px;
-  background-image: url(../img/light-background.jpg);
+  background-image: url(../img/light-green-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   font-size: 12px;
+  border-top: 3px solid var(--green-color);
 }
 
 footer img {
@@ -139,7 +139,8 @@ footer #social-networks a {
   transition: .2s ease-in-out;
 }
 
-i .bi, i{
+i .bi,
+i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +153,7 @@ footer #social-networks a:hover {
 
 #banner {
   padding: 0;
-  background-color: var(--cream-color);
+  background-color: #d8e3ac;
   width: 100%;
 }
 
