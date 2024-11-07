@@ -1,4 +1,4 @@
-@import url('global.css');
+@import url("global.css");
 
 .boton {
   font-size: 15.21px;
@@ -6,8 +6,8 @@
   background-color: var(--green-color);
   padding: 20px 30px;
   border-radius: 7px;
-  cursor: pointer;
-  transition: .2s ease-in-out;
+  cursor: url("../img/cursor-cow.png"), pointer;
+  transition: 0.1s ease-in-out;
 }
 
 .boton:hover {
@@ -21,7 +21,6 @@ section {
   gap: 10px;
   color: #1e201f;
 }
-
 
 /* NAVBAR */
 nav#navbar {
@@ -41,8 +40,8 @@ nav#navbar {
 
 nav#navbar a {
   height: 100%;
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
-
 
 /* nav#navbar header {
     padding: 10px;
@@ -57,7 +56,7 @@ a.nav-link {
   text-transform: uppercase;
   background-color: #ffffffc2;
   color: var(--green-color);
-  transition: .2s ease-in-out;
+  transition: 0.1s;
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0px 0px 14px #0000009c;
@@ -66,6 +65,7 @@ a.nav-link {
 a.nav-link:hover {
   color: var(--green-color);
   background-color: #fff;
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
 
 .menu {
@@ -74,7 +74,7 @@ a.nav-link:hover {
 
 .burger-menu {
   width: 100%;
-  cursor: pointer;
+  cursor: url("../img/cursor-cow.png"), pointer;
   padding: 10px;
 }
 
@@ -83,12 +83,13 @@ a.nav-link:hover {
   height: 3px;
   border-radius: 1px;
   background: var(--green-color);
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
   transition-property: transform;
 }
 
 .burger-menu:hover .barra-burger {
   background: var(--green-color-hover);
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
 
 .barra-burger:nth-child(1),
@@ -116,17 +117,16 @@ input#check-menu {
   display: none;
 }
 
-input#check-menu:checked+label .burger-menu .barra-burger {
+input#check-menu:checked + label .burger-menu .barra-burger {
   background-color: #fe6732;
   transform: rotate(180deg);
 }
 
-input#check-menu:checked+label .nav-content {
+input#check-menu:checked + label .nav-content {
   display: flex;
 }
 
 /* END NAVBAR */
-
 
 main img.banner {
   width: 100%;
@@ -151,7 +151,6 @@ header {
   border-radius: 7px;
 }
 
-
 /* PRODUCTS */
 section#products {
   color: #000;
@@ -174,8 +173,9 @@ section#products div {
   gap: 14px;
 }
 
-#slider-snaks,
-#slider-combos {
+#slider-otros,
+#slider-combos,
+#slider-griego {
   max-width: fit-content;
 }
 
@@ -198,9 +198,8 @@ section#products ul li {
   flex-direction: column;
   gap: 5px;
   justify-content: flex-start;
-  cursor: pointer;
   color: #000;
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
   text-align: center;
   scroll-snap-align: center;
   width: 210px;
@@ -213,7 +212,7 @@ section#products ul li p {
   z-index: 1;
   padding: 0 21px;
   color: transparent;
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
   height: 0px;
   text-align: center;
   width: 100%;
@@ -228,10 +227,10 @@ section#products #slider-combos {
 section#products ul li img {
   width: 210px;
   border-radius: 7px;
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
-section#products ul li img:hover+p {
+section#products ul li img:hover + p {
   color: white;
 }
 
@@ -260,7 +259,6 @@ section#products ul::-webkit-scrollbar-track {
 section#products ul::-webkit-scrollbar-thumb {
   background: #585858;
   border-radius: 12px;
-
 }
 
 section#products ul::-webkit-scrollbar-thumb:hover {
@@ -268,7 +266,6 @@ section#products ul::-webkit-scrollbar-thumb:hover {
 }
 
 @media (min-width: 800px) {
-
   section {
     padding: 21px 14%;
   }

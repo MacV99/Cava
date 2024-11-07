@@ -1,4 +1,4 @@
-@import url('global.css');
+@import url("global.css");
 
 body {
   background-image: url(../img/light-background.jpg);
@@ -19,13 +19,13 @@ body {
   box-shadow: 0px 0px 14px #0000009c;
   background-color: white;
   margin: 14px;
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .bi-cart:hover {
   background-color: rgb(236, 236, 236);
   transform: rotate(-7deg);
-  cursor: pointer;
+  cursor: url("../img/cursor-cow.png"), pointer;
   color: var(--green-color-hover);
 }
 
@@ -53,14 +53,14 @@ header .bi-arrow-left {
   width: auto;
   margin-right: 15px;
   color: var(--green-color);
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .bi-arrow-left:hover {
   color: var(--green-color-hover);
   transform: translateX(-3.5px);
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
-
 
 main {
   display: flex;
@@ -80,7 +80,7 @@ label select {
   margin-top: 7px;
 }
 
-main section>h2,
+main section > h2,
 #select-product {
   font-size: 21px;
   display: flex;
@@ -95,7 +95,6 @@ main section>h2,
   width: fit-content;
   background-color: tra;
 }
-
 
 #productos label {
   width: 100%;
@@ -118,10 +117,10 @@ details {
   color: white;
   border: none;
   padding: 7px;
-  cursor: pointer;
+  cursor: url("../img/cursor-cow.png"), pointer;
   border-radius: 7px;
   font-size: 11px;
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 details {
@@ -131,6 +130,7 @@ details {
 button:hover,
 details:hover {
   background-color: var(--green-color-hover);
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
 
 #carrito li {
@@ -162,6 +162,7 @@ details:hover {
 .restar-producto:hover,
 #cancelar-pedido:hover {
   background-color: #320000;
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
 
 #lista-carrito {
@@ -180,19 +181,17 @@ details:hover {
   border: solid 1px #630000;
 }
 
-
 #limpiar-carrito:hover {
   background-color: #630000;
   color: white;
 }
 
-
-#productos>div::-webkit-scrollbar,
+#productos > div::-webkit-scrollbar,
 #lista-carrito::-webkit-scrollbar {
   width: 0px;
 }
 
-#productos>div,
+#productos > div,
 #lista-carrito {
   display: flex;
   flex-direction: column;
@@ -208,7 +207,7 @@ details:hover {
   /* mask: linear-gradient(to top, transparent 0%, white 5%, white 95%, transparent 100%); */
 }
 
-#productos>div {
+#productos > div {
   max-height: 70vh;
 }
 
@@ -228,6 +227,7 @@ details form {
   gap: 14px;
   color: white;
   font-size: 14px;
+  z-index: 10;
 }
 
 form div {
@@ -238,6 +238,7 @@ details .boton {
   padding: 7px;
   border-radius: 7px;
   font-size: 11px;
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
 
 ul#lista-carrito li p {
@@ -254,8 +255,7 @@ ul#lista-carrito li p {
   }
 
   #carrito ul,
-  #productos>div {
+  #productos > div {
     width: 70%;
   }
-
 }

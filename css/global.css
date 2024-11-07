@@ -5,9 +5,9 @@
 }
 
 @font-face {
-  font-family: 'Lemon/Milk';
+  font-family: "Lemon/Milk";
   /* Nombre que le asignaremos a la fuente */
-  src: url('../Documents/Font/LEMONMILK-Light.otf') format('truetype');
+  src: url("../Documents/Font/LEMONMILK-Light.otf") format("truetype");
   /* Ruta relativa al archivo de la fuente */
 }
 
@@ -15,7 +15,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lemon/Milk', sans-serif !important;
+  font-family: "Lemon/Milk", sans-serif !important;
+  cursor: url("../img/cursor-pointer.png"), auto;
 }
 
 html {
@@ -59,7 +60,6 @@ section,
   justify-content: center;
 }
 
-
 /* FLEX-ROW */
 .flex-row,
 #carrito li button {
@@ -86,7 +86,7 @@ select {
   text-align: center;
   border: none;
   background-color: #ffffff70;
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
   outline: none;
   font-weight: bolder;
   width: 200px;
@@ -96,7 +96,6 @@ input:focus {
   background-color: #ffffffbb;
   border: none;
 }
-
 
 /* FOOTER */
 footer {
@@ -116,8 +115,10 @@ footer {
 }
 
 footer img {
-  width: 140px;
-  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
+  width: 210px;
+  /* box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5); */
+  mix-blend-mode: darken;
+  margin: -28px;
 }
 
 footer #social-networks {
@@ -136,7 +137,8 @@ footer #social-networks a {
   height: 60px;
   border-radius: 100%;
   color: var(--green-color);
-  transition: .2s ease-in-out;
+  transition: 0.1s ease-in-out;
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
 
 i .bi,
@@ -149,6 +151,7 @@ i {
 footer #social-networks a:hover {
   background-color: var(--green-color);
   color: white;
+  cursor: url("../img/cursor-cow.png"), pointer;
 }
 
 #banner {
@@ -159,6 +162,10 @@ footer #social-networks a:hover {
 
 #banner .imgbanner {
   width: 100%;
+}
+
+.bi {
+  pointer-events: none;
 }
 
 .autoShow {
@@ -177,7 +184,6 @@ footer #social-networks a:hover {
     transform: translateY(0);
   }
 }
-
 
 @media (min-width: 800px) {
   footer {
@@ -199,6 +205,4 @@ footer #social-networks a:hover {
       transform: translateY(0) scale(1);
     }
   }
-
-
 }
