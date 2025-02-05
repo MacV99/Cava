@@ -80,7 +80,7 @@ label select {
   margin-top: 7px;
 }
 
-main section > h2,
+main section>h2,
 #select-product {
   font-size: 21px;
   display: flex;
@@ -186,12 +186,12 @@ details:hover {
   color: white;
 }
 
-#productos > div::-webkit-scrollbar,
+#productos>div::-webkit-scrollbar,
 #lista-carrito::-webkit-scrollbar {
   width: 0px;
 }
 
-#productos > div,
+#productos>div,
 #lista-carrito {
   display: flex;
   flex-direction: column;
@@ -207,7 +207,7 @@ details:hover {
   /* mask: linear-gradient(to top, transparent 0%, white 5%, white 95%, transparent 100%); */
 }
 
-#productos > div {
+#productos>div {
   max-height: 70vh;
 }
 
@@ -255,7 +255,7 @@ ul#lista-carrito li p {
   }
 
   #carrito ul,
-  #productos > div {
+  #productos>div {
     width: 70%;
   }
 }

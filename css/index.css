@@ -103,7 +103,7 @@ ul.nav-content {
   top: 70px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -117,12 +117,12 @@ input#check-menu {
   display: none;
 }
 
-input#check-menu:checked + label .burger-menu .barra-burger {
+input#check-menu:checked+label .burger-menu .barra-burger {
   background-color: #fe6732;
   transform: rotate(180deg);
 }
 
-input#check-menu:checked + label .nav-content {
+input#check-menu:checked+label .nav-content {
   display: flex;
 }
 
@@ -230,7 +230,7 @@ section#products ul li img {
   transition: 0.1s ease-in-out;
 }
 
-section#products ul li img:hover + p {
+section#products ul li img:hover+p {
   color: white;
 }
 
