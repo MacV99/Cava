@@ -155,7 +155,6 @@ document.addEventListener("DOMContentLoaded", () => {
             mensaje
         )}`;
         window.open(urlWhatsApp, "_blank");
-        console.log("TEST");
     });
 
     // Botón para cancelar el pedido

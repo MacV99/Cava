@@ -196,13 +196,13 @@ section#products ul {
 section#products ul li {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   justify-content: flex-start;
-  color: #000;
-  transition: 0.1s ease-in-out;
-  text-align: center;
-  scroll-snap-align: center;
   width: 210px;
+  gap: 5px;
+  color: #000;
+  text-align: center;
+  transition: 0.1s ease-in-out;
+  scroll-snap-align: center;
 }
 
 section#products ul li p {
